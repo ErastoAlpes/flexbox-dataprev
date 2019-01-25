@@ -288,14 +288,15 @@ let levels = [
 			.car.yellow{
 
 			}
+
+			.car.blue{
+
+			}		
 		`,
 		hiddenCss:`
 			#parking-lots-layer {
 				justify-content: space-between;
 				align-items: flex-end;
-			}
-			.car.pink{
-				order:1
 			}
 		`,
 		cars: ['yellow', 'pink', 'blue']
