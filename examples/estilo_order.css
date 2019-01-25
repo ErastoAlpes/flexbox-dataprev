@@ -1,0 +1,87 @@
+/**
+ * ESTILO FLEXBOX
+ **/
+
+.exemplo_1 .order_1{
+}
+
+.exemplo_1 .order_2{
+}
+
+.exemplo_1 .order_3{
+}
+
+.exemplo_1 .order_4{
+}
+
+.exemplo_2 {
+}
+
+.exemplo_2 .order_1{
+        
+}
+
+.exemplo_2 .order_2{
+    
+}
+
+.exemplo_2 .order_3{
+    
+}
+
+.exemplo_2 .order_4{
+    
+}
+
+
+/**
+ * ESTILO PADRAO
+ **/
+
+.container {
+    display: flex;
+    background-color: #cdf6eb;
+    margin: 10px auto 30px;
+    max-width: 500px;
+    font-family: sans-serif;
+    flex-wrap; wrap;
+}
+
+.container * {
+    flex:1;
+}
+
+
+.grow_1 {
+   flex-grow: 1
+}
+.column {
+    flex-direction: column;
+}
+.container div {
+    background: #028082; 
+    height: 80px;
+    font-size: 1em;
+    color: #fff;
+    /* as proriedades a partir daqui alinham o texto no centro */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.row div {       
+    margin: 8px 4px;
+    width: 80px;
+}
+.column div {       
+    margin: 8px;
+}
+h4 {
+    margin: 20px 0 0 20px;
+    padding: 0 2%;    
+    font-family: sans-serif;    
+    font-weight: normal;
+    font-size: 1em;
+    color: #3b3b3b;
+    text-align: center;
+}

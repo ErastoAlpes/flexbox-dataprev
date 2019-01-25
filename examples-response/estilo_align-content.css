@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    background-color: #cdf6eb;
+    margin: 10px auto 30px;
+    max-width: 500px;
+    height: 300px;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+.stretch {
+     align-content: stretch;
+}
+.flex-start {
+     align-content: flex-start;
+}
+.flex-end {
+     align-content: flex-end;
+}
+.center {
+     align-content: center;
+}
+.space-between {
+     align-content: space-between;
+}
+.space-around {
+     align-content: space-around;
+}
+.container div {
+    background: #028082;     
+    margin: 8px 4px;
+    font-size: 1em;
+    color: #fff;
+}
+h4 {
+    margin: 20px 0 0 20px;    
+    font-family: sans-serif;    
+    font-weight: normal;
+    font-size: 1em;
+    color: #3b3b3b;
+    text-align: center;
+}

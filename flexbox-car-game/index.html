@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Car Flexbox</title>
+		<meta charset="utf-8" /> 
+		<link href="game.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	</head>
+	<body>
+		<div id="code">
+            <div id="header">
+            	<div id="title"><h2>Car Flexbox</h2></div>
+            	<div id="header-descrption">
+					Bem-vindo ao game <span class="text-detach">Car Flexbox!</span> Ele traz o seguinte desafio: estacionar os carros nas suas devidas vagas.
+					Para isso, você deverá utilizar apenas os comandos do Flexbox, a saber:
+				</div>
+				<div id="flexbox-list">
+					<div id="flexbox-list-1">
+						<ul>
+							<li>flex-direction <span class="flexbox-list-list">row; row-reverse; column; column-reverse</span></li>
+							<li>flex-wrap <span class="flexbox-list-list">nowrap; wrap; wrap-reverse</span></li>
+								
+							<li>flex-flow <span class="flexbox-list-list">row nowrap; row wrap; column nowrap</span></li>
+							<li>justify-content <span class="flexbox-list-list">flex-start; flex-end; center; space-between; space-around</span></li>
+							<li>align-items <span class="flexbox-list-list">stretch; flex-start; flex-end; center; baseline</span></li>
+							<li>align-content <span class="flexbox-list-list">stretch; flex-start; flex-end; center; space-around; </span></li>
+						</ul>
+
+					</div>
+					<div id="flexbox-list-2">
+						<ul>
+							<li>flex-grow <span class="flexbox-list-list">Número; 0</span></li>
+							<li>flex-basis <span class="flexbox-list-list">auto; unidade; 0</span></li>
+							<li>flex-shrink <span class="flexbox-list-list">1; 0; número</span></li>
+							<li>order <span class="flexbox-list-list">0; número</span></li>
+							<li>align-self <span class="flexbox-list-list">auto; flex-start; flex-end; center; baseline; stretch</span></li>
+						</ul>
+
+					</div>
+				</div>
+            </div>
+             <div id="controls">
+                <div id="previous-level-button">◀</div>
+                <div id="current-level"></div>
+                <div id="next-level-button">▶</div>
+            </div>
+            <div id="editor"></div>
+            <div id="submit-submit">
+            	<div id="submit">Executar</div>
+            </div>
+		</div>
+		<div id="game-container">
+		<div id="game-level">
+			<div id="game-level-label">
+				<h2>Nível</h2>
+			</div>
+			<div id="game-level-result">
+				<h2 id="game-level-result-value">1</h2>
+			</div>
+		</div>
+			<div id="game">
+				<div id="parking-lots-layer" class="layer" >
+					<div id="pl1" class="parking-lot">
+						<div class="inside"></div>
+					</div>
+				</div>
+				<div id="estacionamento" class="layer" >
+					<object type="image/svg+xml" data="assets/car.svg" class="car"></object>
+				</div>
+			</div>
+        </div>
+        <div id="success-modal" class="modal">
+        	<div class="modal-content" style="box-shadow:0 0 5px black; background-color:#294D7D;">
+        		<image src="assets/trophy.jpg" style="box-shadow:0 0 5px black, 0 0 50px rgba(255,255,255,0.4); width:200px; border-radius:200px;margin-top:-100px; margin-bottom:20px" />        		
+        		<div style="background-color:white; width:100%; text-align:center; display:flex; flex-direction:column; box-shadow:0 0 2px black; align-items:center">
+					<div style="color:#5D5D5F; font-family: 'Pacifico', cursive; font-size:50px; line-height:100px;">Parabéns!</div>
+					<div style="color:#5D5D5F; font-family:serif; font-size:20px; line-height:40px;">Você estacionou corretamente.</div>
+					<div style="color:#5D5D5F; font-family:serif; font-size:20px; line-height:40px; margin-bottom:30px;">Agora vamos para o próximo nível.</div>
+					<image style="width:50%; border-radius:20px" src="assets/sucesso.gif" />
+					<div id="close-success-modal" style="font-family:sans-serif; color:white;background:#FF7676; padding:10px; margin:20px; border-radius:5px">Próximo Nível</div>
+				</div>
+        	</div>
+        </div>
+        <script src="levels.js"></script>
+        <script src="game.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://ace.c9.io/build/src/ace.js"></script>
+		<template id="car-template">
+			<div class="car">
+				<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 700.000000 700.000000" preserveAspectRatio="xMidYMid meet">
+					<g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)" stroke="none">
+						<path id="car-svg" d="M3300 6700 c-308 -20 -579 -80 -737 -163 -168 -87 -331 -256 -418 -432 -94 -193 -95 -197 -95 -813 l0 -531 -62 -43 c-50 -34 -70 -56 -97 -107 -20 -38 -30 -66 -24 -72 6 -6 61 4 141 25 73 19 134 31 136 27 3 -4 1 -142 -4 -307 -5 -164 -12 -492 -16 -729 -5 -323 -10 -434 -19 -445 -30 -35 -47 -84 -42 -119 2 -20 18 -72 35 -116 28 -73 31 -97 42 -280 20 -324 19 -356 -17 -465 -26 -81 -33 -126 -47 -296 -20 -245 -20 -355 -1 -546 46 -479 187 -723 505 -877 187 -91 485 -140 616 -103 33 10 54 10 95 0 70 -16 348 -16 418 0 41 10 62 10 95 0 131 -37 429 12 616 103 319 154 459 397 505 875 19 199 19 288 -1 542 -13 176 -20 219 -47 301 -36 110 -37 142 -17 466 11 183 14 207 42 280 17 44 33 96 35 116 5 35 -12 84 -42 119 -9 11 -14 121 -19 440 -4 234 -11 562 -16 729 -5 167 -7 307 -5 312 3 4 64 -8 137 -27 80 -21 135 -31 141 -25 6 6 -4 34 -24 72 -27 50 -47 73 -94 105 l-60 42 -6 559 c-5 537 -6 561 -27 638 -75 269 -295 515 -540 601 -156 55 -323 90 -587 123 -205 25 -339 31 -495 21z m-782 -342 c50 -50 -50 -197 -180 -264 -56 -28 -85 -30 -110 -7 -25 22 -23 39 11 99 67 116 233 218 279 172z m2105 -32 c68 -43 140 -123 157 -175 12 -37 11 -43 -5 -61 -24 -26 -55 -25 -113 4 -131 67 -230 213 -179 265 19 19 82 5 140 -33z m-913 -666 c284 -22 468 -83 685 -228 101 -68 287 -241 314 -294 15 -29 12 -61 -34 -348 -8 -47 -23 -146 -34 -220 -43 -279 -61 -393 -66 -400 -3 -5 -26 -1 -52 7 -160 50 -366 96 -528 117 -168 22 -820 23 -990 1 -156 -20 -368 -68 -528 -118 -26 -8 -49 -12 -52 -7 -5 7 -22 117 -66 400 -11 74 -26 176 -34 225 -41 263 -47 306 -41 330 3 13 52 71 109 128 201 203 413 321 676 377 175 36 412 48 641 30z m-1474 -948 c7 -59 22 -186 34 -282 26 -219 58 -521 70 -665 6 -60 18 -191 27 -290 23 -236 22 -806 0 -1125 -9 -124 -19 -274 -22 -335 -4 -60 -13 -177 -21 -259 -8 -82 -14 -156 -14 -164 0 -68 -34 105 -84 433 -43 279 -57 1147 -36 2200 6 308 14 571 16 584 9 42 18 13 30 -97z m2574 -482 c13 -670 13 -1147 0 -1650 -10 -383 -18 -469 -65 -735 -7 -44 -19 -114 -26 -155 -12 -77 -27 -130 -28 -99 -1 9 -7 83 -15 165 -8 82 -17 201 -21 264 -3 63 -12 205 -20 315 -44 635 -24 1076 94 2085 11 91 25 210 31 265 6 55 14 111 17 125 6 25 6 25 14 -5 4 -16 13 -275 19 -575z m-2173 -2265 c436 -85 524 -95 863 -95 339 0 427 10 863 95 133 25 121 41 113 -152 -3 -93 -11 -303 -17 -468 l-10 -300 -40 -35 c-53 -48 -193 -127 -276 -155 -169 -59 -526 -92 -796 -75 -191 13 -375 42 -470 75 -83 28 -223 107 -276 155 l-40 35 -10 300 c-6 165 -14 375 -17 468 -8 193 -20 177 113 152z m-104 -1248 c66 -30 142 -98 156 -137 9 -26 7 -34 -11 -52 -45 -45 -195 1 -287 89 -40 39 -51 56 -51 81 0 19 7 35 18 42 26 16 115 5 175 -23z m2108 23 c12 -7 19 -21 19 -42 0 -67 -151 -173 -263 -185 -46 -5 -58 -2 -75 15 -18 18 -20 26 -11 52 12 32 84 102 134 128 73 38 158 52 196 32z m-898 -47 c4 -3 2 -12 -4 -20 -17 -19 -461 -19 -478 0 -6 8 -8 17 -4 20 8 9 478 9 486 0z"></path>
+					</g>
+				</svg>
+			</div>			
+		</template>
+		<template id="parking-lot-template">
+			<div class="parking-lot">
+				<div class="inside"></div>
+			</div>		
+		</template>
+	</body>
+</html>

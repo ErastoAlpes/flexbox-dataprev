@@ -1,0 +1,45 @@
+.container1, .container2 {
+    display: flex;
+    background-color: #cdf6eb;
+    margin: 10px auto 30px;
+    max-width: 400px;    
+    font-family: sans-serif;
+}
+.container1 {
+    height: 100px;
+}
+.stretch {
+     align-self: stretch;
+}
+.flex-start {
+     align-self: flex-start;
+}
+.flex-end {
+     align-self: flex-end;
+}
+.center {
+     align-self: center;
+}
+.baseline {
+     align-self: baseline;
+}
+.align-items_flex-end {
+     align-items: flex-end;
+}
+.column {
+     flex-direction: column;
+}
+.container1 div, .container2 div {
+    background: #028082;     
+    margin: 4px;
+    font-size: 1em;
+    color: #fff;
+}
+h4 {
+    margin: 20px 0 0 20px;    
+    font-family: sans-serif;    
+    font-weight: normal;
+    font-size: 1em;
+    color: #3b3b3b;
+    text-align: center;
+}

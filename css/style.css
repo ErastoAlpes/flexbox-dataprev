@@ -1,0 +1,406 @@
+body {
+	background-color: #F2F5F7;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.cabecalhoPrincipal {
+	background-color: #00a680;
+	padding: 20px 0;
+}
+
+.cabecalhoPrincipal-titulo {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.cabecalhoPrincipal-titulo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.cabecalhoPrincipal-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #74757E;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+}
+
+.conteudoPrincipal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 28px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 10px;
+	color: #74757E;
+	background-color: #FFF;
+}
+
+.conteudoPrincipal-lugares-link {
+	height: 130px;
+	background-color: #FFF;
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+
+}
+
+.conteudoPrincipal-lugares-link a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.conteudoPrincipal-lugares-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.conteudoPrincipal-lugares-link a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.conteudoPrincipal-lugares-link:nth-child(even) a:before {
+	/*background: url(../img/background1.svg) no-repeat;	*/
+}
+
+.conteudoPrincipal-lugares-link:nth-child(odd) a:before {
+	/*background: url(../img/background2.svg) no-repeat;*/
+}
+
+
+.rodapePrincipal {
+	background-color: #2A343E;
+	padding-top: 20px;
+}
+
+.rodapePrincipal .subtitulo {
+	color: #FFF;
+}
+
+.rodapePrincipal-navMap-link {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.rodapePrincipal-navMap-link {
+	font-size: .9em;
+}
+
+.navmap-list-title {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin: .9em 0;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+.navmap-list-title + .rodapePrincipal-navMap-link {
+	margin-top: 0;
+}
+
+.navmap-list-title-bancoDeDados { color: #EC6E5A; border-left: 4px solid #EC6E5A; }
+.navmap-list-title-framework { color: #AD85BF; border-left: 4px solid #AD85BF; }
+.navmap-list-title-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.navmap-list-title-backend { color: #25D285; border-left: 4px solid #25D285; }
+
+.rodapePrincipal-patrocinadores {
+	margin-top: 30px;
+	background: #F2F5F7;
+	padding: 20px 0;
+}
+
+.rodapePrincipal-contatoForm {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.rodapePrincipal-contatoForm label[for=email-contato] {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.rodapePrincipal-contatoForm-emailInput {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 10px;
+}
+
+.rodapePrincipal-contatoForm-submit {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #4DBA7A;
+	color: #FFF;
+	cursor: pointer;
+	
+}
+
+.rodapePrincipal-contatoForm-submit,
+.rodapePrincipal-contatoForm-emailInput {
+	outline: 0;
+	border: 1px solid #4DBA7A;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.videoSobre {
+	background-color: #00a680;
+	padding: 25px 0;
+
+}
+
+.videoSobre-video {
+	max-width: 100%;
+}
+
+.videoSobre .container {
+	color: #FFF;
+}
+
+.videoSobre-sobre-title {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.videoSobre-sobre {
+	font-size: 1.3em;
+	line-height: 2;
+}
+
+.sobre-jampa div.locais-turisticos {
+	font-style: italic;
+	font-size: 17px;
+	
+}
+
+
+.videoSobre-button {
+	border-radius: 8px;
+	background-color: #ED9A4A;
+	display: block;
+	color: #FFF;
+	border: none;
+	height: 50px;
+	font-size: .8em;
+	outline: none;
+}
+
+.rodapePrincipal-contatoForm-legend {
+	margin-bottom: 10px;
+}
+
+@media(min-width: 769px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.cabecalhoPrincipal-nav-link:hover {
+		color: #FFF;
+		background-color: #ED9A4A;
+	}
+
+	.cabecalhoPrincipal-titulo {
+		margin: 0;
+	}
+
+	.cabecalhoPrincipal-nav {
+		width: auto;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+	.rodapePrincipal-contatoForm {
+		margin-top: 0;
+		text-align: left;
+	}
+
+	.conteudoPrincipal-lugares-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-lugares-link:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+}
+
+@media(min-width: 1000px) {
+	.conteudoPrincipal-lugares-link {
+		margin: 1.333%;
+	}
+
+	.conteudoPrincipal-lugares-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.conteudoPrincipal-lugares-link:nth-child(3n+1) {
+		margin-left: 1.333%;
+	}
+
+	.conteudoPrincipal-lugares-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-lugares-link:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	.videoSobre-sobre {
+		margin-left: 1.5em;
+	}
+
+}
+
+.background-praia{
+	background: url(../img/praia.svg) no-repeat;
+}
+.background-diversao{
+	background: url(../img/diversao.svg) no-repeat;
+}
+.background-natureza{
+	background: url(../img/natureza.svg) no-repeat;	
+}
+.background-cultura{
+	background: url(../img/cultura.svg) no-repeat;	
+}
+.background-culinaria{
+	background: url(../img/comida.svg) no-repeat;	
+}
+
+.conteudoPrincipal-lugares a{
+	color: #fff;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.conteudoPrincipal-lugares a:hover {
+	font-size: 17px;
+}
+
+.cabecalhoPrincipal .container {
+	
+}
+
+
+.rodapePrincipal-patrocinadores-list {
+	margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+	width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+	display: flex;
+}
+
+.rodapePrincipal-navMap-list a {
+	display: block;
+	
+}
+
+.conteudoPrincipal-lugares-link {
+	width: 23%;
+	margin: 1%;
+}
+
+.conteudoPrincipal-lugares-link:nth-child(4n) {
+	margin-right: 0;
+}
+
+.conteudoPrincipal-lugares-link:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+
+
+
+/*parte mobile*/
+@media(max-width: 768px) {
+
+
+
+	.conteudoPrincipal-lugares {
+		flex-direction: column;
+	}
+
+	.conteudoPrincipal-lugares-link {
+		width: 100%;
+	}
+
+	.rodapePrincipal-navMap-list {
+		height: auto;
+		align-items: center;
+	}
+
+	.rodapePrincipal-patrocinadores .container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rodapePrincipal-patrocinadores-list {
+		margin: 0;
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm {
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset {
+		justify-content: center;
+	}
+
+	.cabecalhoPrincipal-nav-link-app {
+		order: -1;
+	}
+
+	.videoSobre .container {
+		flex-direction: column;
+	}
+
+	.videoSobre-video {
+		margin: 0 auto;
+	}
+}

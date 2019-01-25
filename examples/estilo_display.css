@@ -1,0 +1,24 @@
+/**
+ * ESTILO FLEXBOX
+ **/
+.container {
+	
+}
+
+/**
+ * ESTILO PADRAO
+ **/
+
+.container {
+    background-color: #cdf6eb;
+    margin: 20px auto;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+.container div {
+    background: #028082;     
+    margin: 8px 4px;
+    font-size: 1em;
+    color: #fff;
+}
+ 

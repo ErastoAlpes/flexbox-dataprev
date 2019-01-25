@@ -1,0 +1,86 @@
+/**
+ * ESTILO FLEXBOX
+ **/
+
+.container {
+    display: flex;
+}
+
+.flex-grow .caixa_1 {
+
+}
+
+.flex-grow .caixa_2 {
+
+}
+
+.flex-grow .caixa_3 {
+
+}
+
+
+.flex-shrink .caixa_1 {
+    width:200px;
+    flex-shrink:0;
+}
+
+.flex-shrink .caixa_2 {
+    width:200px;
+    flex-shrink:0;
+}
+
+.flex-shrink .caixa_3 {
+    width:200px;
+    flex-shrink:0;
+}
+
+
+.flex-basis .caixa_1 {
+    flex-basis:100px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.flex-basis .caixa_2 {
+    flex-basis:100px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.flex-basis .caixa_3 {
+    flex-basis:100px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+/**
+ * ESTILO PADRAO
+ **/
+
+.container {
+    background-color: #add6cb;
+    margin: 10px auto 30px;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.container div {
+    background: #028082;     
+    margin: 8px 4px;
+    height: 80px;
+    font-size: 1em;
+    color: #fff;
+    /* as proriedades a partir daqui alinham o texto no centro */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h4 {
+    margin: 20px 0 0 20px;    
+    font-family: sans-serif;    
+    font-weight: normal;
+    font-size: 1em;
+    color: #3b3b3b;
+    text-align: center;
+}

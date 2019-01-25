@@ -1,0 +1,61 @@
+/**
+ * ESTILO FLEXBOX
+ **/
+
+
+.container1 {
+
+}
+
+.container2 {
+
+}
+.stretch {
+
+}
+.flex-start {
+
+}
+.flex-end {
+
+}
+.center {
+
+}
+.baseline {
+
+}
+.align-items_flex-end {
+
+}
+.column {
+
+}
+
+/**
+ * ESTILO PADRAO
+ **/
+
+.container1, .container2 {
+    background-color: #cdf6eb;
+    margin: 10px auto 30px;
+    max-width: 400px;    
+    font-family: sans-serif;
+}
+.container1 {
+    height: 100px;
+}
+.container1 div, .container2 div {
+    background: #028082;     
+    margin: 4px;
+    font-size: 1em;
+    color: #fff;
+}
+h4 {
+    margin: 20px 0 0 20px;    
+    font-family: sans-serif;    
+    font-weight: normal;
+    font-size: 1em;
+    color: #3b3b3b;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+/**
+ * CABECALHO
+ **/
+.cabecalho {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+}
+
+
+/**
+ * CONTEUDO
+ **/
+.grade {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sobre-jampa {
+  display: flex;	
+}
+
+.sobre-jampa .locais-turisticos {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ flex-grow: 1;
+}
+
+
+/**
+ * RODAPE
+ **/
+
+ .mapa-do-site {
+ 	display: flex;
+ }
+
+ .mapa-do-site .coluna {
+ 	flex-grow: 1;
+ }
+
+.rodape {
+	display: flex;
+	justify-content: space-between;
+}
